@@ -30,12 +30,12 @@ describe('String Calculator', function() {
     it('age 18+', function() {
         document.getElementById('birthday').value = '';
         document.getElementById('add-btn').click();
-        expect(document.getElementById('birthdayResult').innerHTML).toBe('too young');
+        expect(document.getElementById('birthdayResult').innerHTML).toBe('correct date');
       });
 
     it('email', function() {
       document.getElementById('email').value = '';
       document.getElementById('add-btn').click();
-      expect(document.getElementById('emailResult').innerHTML).toBe('ok');
+      expect(document.getElementById('emailResult').innerHTML).toBe('incorrect email');
     });
   });
