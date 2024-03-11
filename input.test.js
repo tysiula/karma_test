@@ -38,4 +38,9 @@ describe('String Calculator', function() {
       document.getElementById('add-btn').click();
       expect(document.getElementById('emailResult').innerHTML).toBe('incorrect email');
     });
+      it('nameCorrectColor', function() {
+          document.getElementById('name').value = 'ania';
+          document.getElementById('add-btn').click();
+          expect(document.getElementById('nameResult').style.color).toBe('green');
+        });
   });
